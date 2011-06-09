@@ -30,11 +30,12 @@ Then you have to add the following variables to your settings file (or just use 
 
 Change the <user-id> to your username on flattr.
 You can change the other variables to something more appropriate as well. 
-If you want the compact button instead of the normal flattr button, uncomment the last line in the CONTEX dictionary. 
+If you want the compact button instead of the normal flattr button, uncomment the last line in the CONTEXT dictionary. 
 
 The Flattr javascript file must also be present on the website. I placed the code (below) in the 
 	_base.html
 layout file. Here is the scipt that I added. 
+
 	<script type="text/javascript">
 	/* <![CDATA[ */
 	    (function() {
