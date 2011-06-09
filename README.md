@@ -5,7 +5,9 @@
 ## Install
 
 Add the file 
+
 	_flattr_button.html
+
 to you layout skeleton folder.
 
 Then you have to add the following variables to your settings file (or just use the one included)
@@ -49,7 +51,11 @@ layout file. Here is the scipt that I added.
 	</script>
 
 Now you can simply put 
+
 	{% include "skeleton/_flattr_button.html" %}
+
 where ever you want the Flattr button. In the included example I placed it on the bottom of the 
+
 	_post.html
+
 layout file. 
