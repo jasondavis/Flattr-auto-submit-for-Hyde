@@ -106,7 +106,7 @@ SITE_POST_PROCESSORS = {
 FLATTR_CAT = "text"
 FLATTR_DESCRIPTION = " A blogpost from my blog!"
 FLATTR_TAGS = "blog, test"
-FLATTR_USER = "test303"
+FLATTR_USER = "<user-id>"
 
 CONTEXT = {
 	'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS,
