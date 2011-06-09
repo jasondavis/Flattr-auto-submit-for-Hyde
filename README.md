@@ -1,6 +1,12 @@
 # Flattr for Hyde
-## A flattr auto submit layout for the static site generator Hyde.
+## A Flattr auto submit layout for the static site generator Hyde.
 
+You can add these files to your Hyde setup to automagically generate flattr buttons for all your blog posts.
+They will not appear on Flattr.com until some has flattred them. 
+
+Written during the Flattr.com Open Source day!
+
+If something is unclear please look in the included example project (forked from the Hyde repository https://github.com/lakshmivyas/hyde). 
 
 ## Install
 
@@ -12,10 +18,10 @@ to you layout skeleton folder.
 
 Then you have to add the following variables to your settings file (or just use the one included)
 	
+	FLATTR_USER = "user-id"
 	FLATTR_CAT = "text"
 	FLATTR_DESCRIPTION = "A blogpost from my blog!"
-	FLATTR_TAGS = "blog, test"
-	FLATTR_USER = "<user-id>"
+	FLATTR_TAGS = "blog, text"
 
 	CONTEXT = {
 		'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS,
@@ -30,12 +36,14 @@ Then you have to add the following variables to your settings file (or just use 
 
 
 
-Change the <user-id> to your username on flattr.
+Change the "user-id" to your username on flattr.
 You can change the other variables to something more appropriate as well. 
 If you want the compact button instead of the normal flattr button, uncomment the last line in the CONTEXT dictionary. 
 
-The Flattr javascript file must also be present on the website. I placed the code (below) in the 
+The Flattr javascript file must also be present on the website. I placed the code (below) in the
+ 
 	_base.html
+	
 layout file. Here is the scipt that I added. 
 
 	<script type="text/javascript">
@@ -58,4 +66,4 @@ where ever you want the Flattr button. In the included example I placed it on th
 
 	_post.html
 
-layout file. 
+layout file in the example. 

@@ -1,3 +1,7 @@
+"""
+EXAMPLE SETTING FILE WITH THE FLATTR BUTTON VARIABLES INCLUDED. 
+"""
+
 import os
 here = lambda *x: os.path.join(os.path.abspath(os.path.dirname(__file__)), *x)
 
@@ -49,6 +53,24 @@ APPEND_SLASH = False
 # should specify css/ie for the folder name. css/* is not supported (yet).
 
 # Extensions do not support wildcards.
+
+#Flattr button variables, default settings. 
+FLATTR_USER = "<user-id>"
+FLATTR_CAT = "text"
+FLATTR_DESCRIPTION = " A blogpost from my blog!"
+FLATTR_TAGS = "blog, test"
+
+
+
+CONTEXT = {
+	'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS,
+	'FLATTR_USER' : FLATTR_USER, 
+	'FLATTR_CAT' : FLATTR_CAT,
+	'FLATTR_TAGS' : FLATTR_TAGS,
+	'FLATTR_DESC' : FLATTR_DESCRIPTION,
+#	'FLATTR_COMPACT_BUTTON' : "True" #Uncomment this line to get compact button
+	
+}
 
 MEDIA_PROCESSORS = {
 	'*':{
@@ -103,20 +125,6 @@ SITE_POST_PROCESSORS = {
 	    }
 }
 
-FLATTR_CAT = "text"
-FLATTR_DESCRIPTION = " A blogpost from my blog!"
-FLATTR_TAGS = "blog, test"
-FLATTR_USER = "<user-id>"
-
-CONTEXT = {
-	'GENERATE_CLEAN_URLS': GENERATE_CLEAN_URLS,
-	'FLATTR_USER' : FLATTR_USER, 
-	'FLATTR_CAT' : FLATTR_CAT,
-	'FLATTR_TAGS' : FLATTR_TAGS,
-	'FLATTR_DESC' : FLATTR_DESCRIPTION,
-#	'FLATTR_COMPACT_BUTTON' : "True" #Uncomment this line to get compact button
-	
-}
 
 FILTER = {
 	'include': (".htaccess",),
