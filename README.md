@@ -14,7 +14,7 @@ Add the file
 
 	_flattr_button.html
 
-to you layout skeleton folder.
+to you layout layout/skeleton folder.
 
 Then you have to add the following variables to your settings file (or just use the one included)
 	
@@ -66,4 +66,7 @@ where ever you want the Flattr button. In the included example I placed it on th
 
 	_post.html
 
-layout file in the example. 
+layout file in the example.
+
+##Flattr this project
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=melpomene&url=https://github.com/melpomene/Flattr-auto-submit-for-Hyde&title=Flattr auto submit for Hyde&language=en_GB&tags=github&category=software)  
